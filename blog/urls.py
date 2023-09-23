@@ -1,5 +1,6 @@
 from django.urls import path , include
+from .views import ArticleList
 
 urlpatterns = [
-    path("", )
+    path("", ArticleList.as_view(), name=list)
 ]
